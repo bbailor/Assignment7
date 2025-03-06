@@ -1,5 +1,9 @@
 package Game;
 
+import GUIControls.Window;
+import Models.Direction;
+import Models.Pellet;
+import Models.Snake;
 import java.awt.Color;
 import java.awt.Font;
 import java.awt.Graphics;
@@ -10,14 +14,8 @@ import java.awt.event.ActionListener;
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
 import java.util.Random;
-
 import javax.swing.JPanel;
 import javax.swing.Timer;
-
-import GUIControls.Window;
-import Models.Direction;
-import Models.Pellet;
-import Models.Snake;
 
 public class Game extends JPanel {
 	private Timer timer;
@@ -167,7 +165,7 @@ public class Game extends JPanel {
 		int incrementTracker = 0;
 		for (int i = 0; i < numberOfRows; i++) {
 			for (int j = 0; j < numberOfColumns; j++) {
-				Color gridColor = j % 2 == incrementTracker ? new Color(220, 220, 220) : Color.white;
+				Color gridColor = j % 2 == incrementTracker ? new Color(162, 209, 73) : new Color(170, 215, 81);
 				g.setColor(gridColor);
 				g.fillRect(j * GRID_SIZE, i * GRID_SIZE, GRID_SIZE, GRID_SIZE);
 			}
