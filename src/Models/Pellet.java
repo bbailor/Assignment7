@@ -2,14 +2,13 @@ package Models;
 
 import java.awt.Color;
 import java.awt.Graphics2D;
-
-import SwingShapes.Ellipse;
+import SwingShapes.Rectangle;
 
 public class Pellet {
-	private Ellipse pellet;
+	private Rectangle pellet;
 	
 	public Pellet() {
-		pellet = new Ellipse();
+		pellet = new Rectangle();
 		pellet.setColor(Color.red);
 		pellet.setSize(20, 20);
 	}
