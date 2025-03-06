@@ -4,10 +4,11 @@ import java.awt.Color;
 import java.awt.Graphics2D;
 
 import SwingShapes.Rectangle; // Importing Rectangle instead of Ellipse
+import SwingShapes.RectangleShape;
 
 public class Segment {
     private Rectangle segment; // Change type to Rectangle
-    
+        
     public Segment(int startXLocation, int startYLocation, Color color) {
         segment = new Rectangle(); // Initialize as a Rectangle
         segment.setColor(color);
